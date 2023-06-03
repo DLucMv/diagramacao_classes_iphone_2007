@@ -1,11 +1,12 @@
 package com.dlmv.iphone;
 
+import com.dlmv.email.Email;
 import com.dlmv.navegador.NavegadorDeInternet;
 import com.dlmv.reprodutor.ReprodutorMusical;
 import com.dlmv.telefone.AparelhoTelefonico;
 
-public class IPhone implements NavegadorDeInternet, ReprodutorMusical, AparelhoTelefonico {
-
+public class IPhone implements NavegadorDeInternet, ReprodutorMusical,
+        AparelhoTelefonico, Email {
 
     @Override
     public void exibirPagina() {
@@ -49,6 +50,21 @@ public class IPhone implements NavegadorDeInternet, ReprodutorMusical, AparelhoT
 
     @Override
     public void iniciarCorreioVoz() {
+
+    }
+
+    @Override
+    public void enviarEmail() {
+
+    }
+
+    @Override
+    public void responderEmail() {
+
+    }
+
+    @Override
+    public void apagarEmail() {
 
     }
 }
